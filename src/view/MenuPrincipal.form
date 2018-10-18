@@ -14,36 +14,24 @@
             <Property name="toolTipText" type="java.lang.String" value="Gerencia os usu&#xe1;rios do sistema."/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuAddUsuario">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuAddEditUsuario">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/view/images/user_add.png"/>
+                  <Image iconType="3" name="/view/images/user_edit.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Adicionar Usu&#xe1;rio"/>
+                <Property name="text" type="java.lang.String" value="Adicionar/Editar Usu&#xe1;rio"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                   <Color id="Cursor Padr&#xe3;o"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuAddUsuarioActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuEditUsuario">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/user_edit.png"/>
-                </Property>
-                <Property name="mnemonic" type="int" value="69"/>
-                <Property name="text" type="java.lang.String" value="Editar Usu&#xe1;rio"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuEditUsuarioActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuAddEditUsuarioActionPerformed"/>
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuRemoveUsuario">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/user_delete.png"/>
+                  <Image iconType="3" name="/view/images/user_delete.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="82"/>
                 <Property name="text" type="java.lang.String" value="Remover Usu&#xe1;rio"/>
@@ -51,36 +39,28 @@
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuAdicionarSetor">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuAddEditrSetor">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/building_add.png"/>
+                  <Image iconType="3" name="/view/images/building_add.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Adicionar Setor"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuEditarSetor">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/building_edit.png"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Editar Setor"/>
+                <Property name="text" type="java.lang.String" value="Adicionar/Editar Setor"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuRemoverSetor">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/building_delete.png"/>
+                  <Image iconType="3" name="/view/images/building_delete.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Remover Setor"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator2">
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuAdicionarLocalidade">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuAddLocalidade">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/map_add.png"/>
+                  <Image iconType="3" name="/view/images/map_add.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Adicionar Localidade"/>
               </Properties>
@@ -88,7 +68,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuEditarLocalidade">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/map_edit.png"/>
+                  <Image iconType="3" name="/view/images/map_edit.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Editar Localidade"/>
               </Properties>
@@ -96,9 +76,19 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuRemoverLocalidade">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/map_delete.png"/>
+                  <Image iconType="3" name="/view/images/map_delete.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Remover Localidade"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator3">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuSair">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/images/door.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="SAIR"/>
               </Properties>
             </MenuItem>
           </SubComponents>
@@ -106,16 +96,16 @@
         <Menu class="javax.swing.JMenu" name="jMenuGuiaLevantamentos">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/page.png"/>
+              <Image iconType="3" name="/view/images/page.png"/>
             </Property>
             <Property name="mnemonic" type="int" value="76"/>
             <Property name="text" type="java.lang.String" value="LEVANTAMENTOS"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuInserirLevantamentos">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuAddLevantamentos">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/page_add.png"/>
+                  <Image iconType="3" name="/view/images/page_add.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Inserir Levantamento"/>
               </Properties>
@@ -123,7 +113,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuEditLevantamento">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/page_edit.png"/>
+                  <Image iconType="3" name="/view/images/page_edit.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Editar Levantamento"/>
               </Properties>
@@ -131,7 +121,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuRemoveLevantamento">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/page_delete.png"/>
+                  <Image iconType="3" name="/view/images/page_delete.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Remover Levantamento"/>
               </Properties>
@@ -139,7 +129,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuImprimirLevantamento">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/printer.png"/>
+                  <Image iconType="3" name="/view/images/printer.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Imprimir Levantamento"/>
               </Properties>
@@ -173,20 +163,17 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jDesktopPane1" alignment="0" max="32767" attributes="0"/>
+          <Component id="jDPaneMenuPrincipal" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <Component id="jDesktopPane1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-          </Group>
+          <Component id="jDPaneMenuPrincipal" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JDesktopPane" name="jDesktopPane1">
+    <Container class="javax.swing.JDesktopPane" name="jDPaneMenuPrincipal">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="cc" red="cc" type="rgb"/>
@@ -196,12 +183,12 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="759" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="503" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="481" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>

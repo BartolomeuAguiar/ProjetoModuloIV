@@ -29,22 +29,22 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane1 = new javax.swing.JDesktopPane();
+        jDPaneMenuPrincipal = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuGerencia = new javax.swing.JMenu();
-        jMenuAddUsuario = new javax.swing.JMenuItem();
-        jMenuEditUsuario = new javax.swing.JMenuItem();
+        jMenuAddEditUsuario = new javax.swing.JMenuItem();
         jMenuRemoveUsuario = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
-        jMenuAdicionarSetor = new javax.swing.JMenuItem();
-        jMenuEditarSetor = new javax.swing.JMenuItem();
+        jMenuAddEditrSetor = new javax.swing.JMenuItem();
         jMenuRemoverSetor = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
-        jMenuAdicionarLocalidade = new javax.swing.JMenuItem();
+        jMenuAddLocalidade = new javax.swing.JMenuItem();
         jMenuEditarLocalidade = new javax.swing.JMenuItem();
         jMenuRemoverLocalidade = new javax.swing.JMenuItem();
+        jSeparator3 = new javax.swing.JPopupMenu.Separator();
+        jMenuSair = new javax.swing.JMenuItem();
         jMenuGuiaLevantamentos = new javax.swing.JMenu();
-        jMenuInserirLevantamentos = new javax.swing.JMenuItem();
+        jMenuAddLevantamentos = new javax.swing.JMenuItem();
         jMenuEditLevantamento = new javax.swing.JMenuItem();
         jMenuRemoveLevantamento = new javax.swing.JMenuItem();
         jMenuImprimirLevantamento = new javax.swing.JMenuItem();
@@ -52,17 +52,17 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menu Principal");
 
-        jDesktopPane1.setBackground(new java.awt.Color(204, 204, 255));
+        jDPaneMenuPrincipal.setBackground(new java.awt.Color(204, 204, 255));
 
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 787, Short.MAX_VALUE)
+        javax.swing.GroupLayout jDPaneMenuPrincipalLayout = new javax.swing.GroupLayout(jDPaneMenuPrincipal);
+        jDPaneMenuPrincipal.setLayout(jDPaneMenuPrincipalLayout);
+        jDPaneMenuPrincipalLayout.setHorizontalGroup(
+            jDPaneMenuPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 759, Short.MAX_VALUE)
         );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 503, Short.MAX_VALUE)
+        jDPaneMenuPrincipalLayout.setVerticalGroup(
+            jDPaneMenuPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 481, Short.MAX_VALUE)
         );
 
         jMenuGerencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/computer_key.png"))); // NOI18N
@@ -70,76 +70,67 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenuGerencia.setText("GERÊNCIA");
         jMenuGerencia.setToolTipText("Gerencia os usuários do sistema.");
 
-        jMenuAddUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/user_add.png"))); // NOI18N
-        jMenuAddUsuario.setText("Adicionar Usuário");
-        jMenuAddUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jMenuAddUsuario.addActionListener(new java.awt.event.ActionListener() {
+        jMenuAddEditUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/user_edit.png"))); // NOI18N
+        jMenuAddEditUsuario.setText("Adicionar/Editar Usuário");
+        jMenuAddEditUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jMenuAddEditUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuAddUsuarioActionPerformed(evt);
+                jMenuAddEditUsuarioActionPerformed(evt);
             }
         });
-        jMenuGerencia.add(jMenuAddUsuario);
+        jMenuGerencia.add(jMenuAddEditUsuario);
 
-        jMenuEditUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/user_edit.png"))); // NOI18N
-        jMenuEditUsuario.setMnemonic('E');
-        jMenuEditUsuario.setText("Editar Usuário");
-        jMenuEditUsuario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuEditUsuarioActionPerformed(evt);
-            }
-        });
-        jMenuGerencia.add(jMenuEditUsuario);
-
-        jMenuRemoveUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/user_delete.png"))); // NOI18N
+        jMenuRemoveUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/user_delete.png"))); // NOI18N
         jMenuRemoveUsuario.setMnemonic('R');
         jMenuRemoveUsuario.setText("Remover Usuário");
         jMenuGerencia.add(jMenuRemoveUsuario);
         jMenuGerencia.add(jSeparator1);
 
-        jMenuAdicionarSetor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/building_add.png"))); // NOI18N
-        jMenuAdicionarSetor.setText("Adicionar Setor");
-        jMenuGerencia.add(jMenuAdicionarSetor);
+        jMenuAddEditrSetor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/building_add.png"))); // NOI18N
+        jMenuAddEditrSetor.setText("Adicionar/Editar Setor");
+        jMenuGerencia.add(jMenuAddEditrSetor);
 
-        jMenuEditarSetor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/building_edit.png"))); // NOI18N
-        jMenuEditarSetor.setText("Editar Setor");
-        jMenuGerencia.add(jMenuEditarSetor);
-
-        jMenuRemoverSetor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/building_delete.png"))); // NOI18N
+        jMenuRemoverSetor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/building_delete.png"))); // NOI18N
         jMenuRemoverSetor.setText("Remover Setor");
         jMenuGerencia.add(jMenuRemoverSetor);
         jMenuGerencia.add(jSeparator2);
 
-        jMenuAdicionarLocalidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/map_add.png"))); // NOI18N
-        jMenuAdicionarLocalidade.setText("Adicionar Localidade");
-        jMenuGerencia.add(jMenuAdicionarLocalidade);
+        jMenuAddLocalidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/map_add.png"))); // NOI18N
+        jMenuAddLocalidade.setText("Adicionar Localidade");
+        jMenuGerencia.add(jMenuAddLocalidade);
 
-        jMenuEditarLocalidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/map_edit.png"))); // NOI18N
+        jMenuEditarLocalidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/map_edit.png"))); // NOI18N
         jMenuEditarLocalidade.setText("Editar Localidade");
         jMenuGerencia.add(jMenuEditarLocalidade);
 
-        jMenuRemoverLocalidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/map_delete.png"))); // NOI18N
+        jMenuRemoverLocalidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/map_delete.png"))); // NOI18N
         jMenuRemoverLocalidade.setText("Remover Localidade");
         jMenuGerencia.add(jMenuRemoverLocalidade);
+        jMenuGerencia.add(jSeparator3);
+
+        jMenuSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/door.png"))); // NOI18N
+        jMenuSair.setText("SAIR");
+        jMenuGerencia.add(jMenuSair);
 
         jMenuBar1.add(jMenuGerencia);
 
-        jMenuGuiaLevantamentos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/page.png"))); // NOI18N
+        jMenuGuiaLevantamentos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/page.png"))); // NOI18N
         jMenuGuiaLevantamentos.setMnemonic('L');
         jMenuGuiaLevantamentos.setText("LEVANTAMENTOS");
 
-        jMenuInserirLevantamentos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/page_add.png"))); // NOI18N
-        jMenuInserirLevantamentos.setText("Inserir Levantamento");
-        jMenuGuiaLevantamentos.add(jMenuInserirLevantamentos);
+        jMenuAddLevantamentos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/page_add.png"))); // NOI18N
+        jMenuAddLevantamentos.setText("Inserir Levantamento");
+        jMenuGuiaLevantamentos.add(jMenuAddLevantamentos);
 
-        jMenuEditLevantamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/page_edit.png"))); // NOI18N
+        jMenuEditLevantamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/page_edit.png"))); // NOI18N
         jMenuEditLevantamento.setText("Editar Levantamento");
         jMenuGuiaLevantamentos.add(jMenuEditLevantamento);
 
-        jMenuRemoveLevantamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/page_delete.png"))); // NOI18N
+        jMenuRemoveLevantamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/page_delete.png"))); // NOI18N
         jMenuRemoveLevantamento.setText("Remover Levantamento");
         jMenuGuiaLevantamentos.add(jMenuRemoveLevantamento);
 
-        jMenuImprimirLevantamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/printer.png"))); // NOI18N
+        jMenuImprimirLevantamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/printer.png"))); // NOI18N
         jMenuImprimirLevantamento.setText("Imprimir Levantamento");
         jMenuGuiaLevantamentos.add(jMenuImprimirLevantamento);
 
@@ -151,28 +142,22 @@ public class MenuPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addComponent(jDPaneMenuPrincipal)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jDPaneMenuPrincipal)
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuAddUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuAddUsuarioActionPerformed
+    private void jMenuAddEditUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuAddEditUsuarioActionPerformed
         TelaCadastroUsuario cadastroUsuario = new TelaCadastroUsuario();
-        jDesktopPane1.add(cadastroUsuario);
+        jDPaneMenuPrincipal.add(cadastroUsuario);
         cadastroUsuario.setVisible(true);
-    }//GEN-LAST:event_jMenuAddUsuarioActionPerformed
-
-    private void jMenuEditUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuEditUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuEditUsuarioActionPerformed
+    }//GEN-LAST:event_jMenuAddEditUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -202,32 +187,30 @@ public class MenuPrincipal extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MenuPrincipal().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new MenuPrincipal().setVisible(true);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JDesktopPane jDesktopPane1;
-    private javax.swing.JMenuItem jMenuAddUsuario;
-    private javax.swing.JMenuItem jMenuAdicionarLocalidade;
-    private javax.swing.JMenuItem jMenuAdicionarSetor;
+    private javax.swing.JDesktopPane jDPaneMenuPrincipal;
+    private javax.swing.JMenuItem jMenuAddEditUsuario;
+    private javax.swing.JMenuItem jMenuAddEditrSetor;
+    private javax.swing.JMenuItem jMenuAddLevantamentos;
+    private javax.swing.JMenuItem jMenuAddLocalidade;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuEditLevantamento;
-    private javax.swing.JMenuItem jMenuEditUsuario;
     private javax.swing.JMenuItem jMenuEditarLocalidade;
-    private javax.swing.JMenuItem jMenuEditarSetor;
     private javax.swing.JMenu jMenuGerencia;
     private javax.swing.JMenu jMenuGuiaLevantamentos;
     private javax.swing.JMenuItem jMenuImprimirLevantamento;
-    private javax.swing.JMenuItem jMenuInserirLevantamentos;
     private javax.swing.JMenuItem jMenuRemoveLevantamento;
     private javax.swing.JMenuItem jMenuRemoveUsuario;
     private javax.swing.JMenuItem jMenuRemoverLocalidade;
     private javax.swing.JMenuItem jMenuRemoverSetor;
+    private javax.swing.JMenuItem jMenuSair;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
+    private javax.swing.JPopupMenu.Separator jSeparator3;
     // End of variables declaration//GEN-END:variables
 }
