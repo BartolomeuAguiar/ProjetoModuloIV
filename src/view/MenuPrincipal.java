@@ -65,12 +65,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
             .addGap(0, 503, Short.MAX_VALUE)
         );
 
-        jMenuGerencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/computer_key.png"))); // NOI18N
-        jMenuGerencia.setMnemonic('U');
+        jMenuGerencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/computer_key.png"))); // NOI18N
+        jMenuGerencia.setMnemonic('G');
         jMenuGerencia.setText("GERÊNCIA");
         jMenuGerencia.setToolTipText("Gerencia os usuários do sistema.");
 
-        jMenuAddUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/user_add.png"))); // NOI18N
+        jMenuAddUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/user_add.png"))); // NOI18N
         jMenuAddUsuario.setText("Adicionar Usuário");
         jMenuAddUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jMenuAddUsuario.addActionListener(new java.awt.event.ActionListener() {
